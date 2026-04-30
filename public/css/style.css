@@ -1,0 +1,260 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  background-color: #f8f9fa;
+  height: 5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.fa-compass {
+  color: #fe424d !important;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+  /* font-size: 1.2rem !important; */
+}
+
+/* // Footer styles */
+.f-info-links a {
+  color: #222222 !important;
+  text-decoration: none;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-logo,
+.f-info-links,
+.f-info-copy {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-info-logo i {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.f-info {
+  background-color: #e6ebf0;
+  height: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* cards */
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  object-fit: cover !important;
+  width: 100% !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.card-link {
+  text-decoration: none !important;
+}
+
+/* card effect */
+.card-img-overlay {
+  opacity: 0;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  transition: all 0.3s ease;
+}
+
+/* new page */
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* edit page */
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* show page */
+.show-img {
+  height: 35vh;
+}
+
+.btns {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.card-text {
+  margin-top: 20px;
+}
+
+/* navbar search */
+.main-header {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.btn-search {
+  background-color: #fe424d;
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-search:hover {
+  background-color: #fe424d;
+  color: white;
+}
+
+.btn-search i {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.search-inp {
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  border: 1px solid #ccc;
+}
+
+/* UI filter */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.8rem;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter p {
+  font-size: 0.9rem;
+}
+
+.taxinfo {
+  font-size: 0.9rem;
+  color: #555;
+  display: none;
+}
+
+.tax-toggle {
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+}
+
+/*map*/
+/* #map {
+  height: 400px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+} */
+
+/* Map Container */
+#map {
+    height: 420px;
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    margin-top: 15px;
+}
+
+/* Custom Airbnb Marker */
+.airbnb-pin {
+    background: #FF385C;
+    color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 8px 20px rgba(255,56,92,0.35);
+}
+
+.airbnb-pin i {
+    transform: rotate(45deg);
+}
+
+/* Popup */
+.airbnb-popup {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    padding: 4px;
+}
+
+/* Zoom buttons */
+.leaflet-control-zoom a {
+    border-radius: 10px !important;
+    margin-bottom: 6px;
+    border: none !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* Remove outer border box */
+.leaflet-bar {
+    border: none !important;
+    box-shadow: none !important;
+}
