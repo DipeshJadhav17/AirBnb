@@ -1,7 +1,6 @@
 require('dotenv').config({ path: '../.env' });
 
 const mongoose = require('mongoose');
-// const { data } = require('./data.js'); 
 const data = require('./data.js');
 const Listing = require('../models/listing.js');
 
@@ -11,6 +10,9 @@ async function main() {
     await mongoose.connect(mongo_url);
     await initDB();
 }
+
+// console.log("DEBUG DATA:", data);
+// console.log("IS ARRAY:", Array.isArray(data));
 
 const initDB = async () => {
     await Listing.deleteMany({});
