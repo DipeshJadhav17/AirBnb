@@ -95,6 +95,12 @@ passport.serializeUser(User.serializeUser());//serializing user for session
 passport.deserializeUser(User.deserializeUser());//deserializing user for session
 
 
+app.use((req, res, next) => {
+    res.locals.currUser = req.user;
+    next();
+});
+
+
 const listingRouter = require('./routes/listings.js');//importing listing routes
 const reviewRouter = require("./routes/reviews.js");//importing review routes
 const userRouter = require("./routes/user.js");//importing user routes
