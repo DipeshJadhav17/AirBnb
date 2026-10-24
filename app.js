@@ -180,7 +180,6 @@
 //     res.status(statusCode).render("./listings/error.ejs", { message });
 // })
 
-
 if (process.env.NODE_ENV !== "production") {
     require("dotenv").config();
 }
