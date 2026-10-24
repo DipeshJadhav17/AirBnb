@@ -4,7 +4,7 @@ const wrapAsync = require("../utlis/wrapasync");//importing wrapAsync to handle 
 const Review = require('../models/review');//importing Review model to handle reviews for listings
 const Listing = require('../models/listing.js');//importing Listing model to handle listing data
 const mongoose = require('mongoose');
-const { validateReview, isLoggedIn, isReviewAuthor } = require("../authMiddleware.js");//importing validateReview middleware to validate review data before creating a review
+const { validateReview, isLoggedIn, isReviewAuthor } = require("../authmiddleware.js");//importing validateReview middleware to validate review data before creating a review
 
 const controllers = require("../controllers/reviews");//importing review controllers to handle review logic
 
