@@ -6,7 +6,7 @@ A full-stack Airbnb clone built using Node.js, Express, MongoDB, and EJS. Users 
 
 ## 🌐 Live Demo
 
-👉 https://airbnb-project-42k3.onrender.com/listings
+👉 https://air-bnb-ashh24.vercel.app/listings
 
 Explore real-time listings, create new properties, and view locations on the map.
 
